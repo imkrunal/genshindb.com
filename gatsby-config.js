@@ -1,10 +1,21 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `characters`,
+        path: `${__dirname}/src/data/characters`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `@chakra-ui/gatsby-plugin`,
+      options: {
+        isResettingCSS: true,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+  ],
 }
