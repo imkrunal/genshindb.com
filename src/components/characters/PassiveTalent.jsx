@@ -3,16 +3,7 @@ import { Image as GatsbyImage } from 'gatsby-image'
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import { getElementColor } from '../../utils/helper'
 
-const TalentUpgrade = ({ upgrade }) => {
-  return (
-    <Flex paddingY={4} paddingX={8} backgroundColor="gray.900" borderRadius={4}>
-      <Box width={0.5}>{upgrade.name}</Box>
-      <Box width={0.5}>{upgrade.value}</Box>
-    </Flex>
-  )
-}
-
-const SkillTalent = ({ talent, vision }) => {
+const PassiveTalent = ({ talent, vision }) => {
   return (
     <Box
       backgroundColor="gray.900"
@@ -37,9 +28,6 @@ const SkillTalent = ({ talent, vision }) => {
             borderRadius={4}
             marginBottom={4}
           />
-          <Text as="span" fontSize={14} color="gray.300">
-            {talent.unlock}
-          </Text>
         </Box>
         <Box flex={1}>
           <Heading
@@ -50,32 +38,14 @@ const SkillTalent = ({ talent, vision }) => {
           >
             {talent.name}
           </Heading>
-          {/* {talent.description.split('\n').map((info) => ( */}
+          <Text fontSize={16} color="gray.100" marginBottom={2}>
+            {talent.unlock}
+          </Text>
           <Text>{talent.description}</Text>
-          {/* ))} */}
         </Box>
       </Flex>
-      {talent.upgrades && (
-        <>
-          <Heading
-            as="h4"
-            fontSize={18}
-            paddingX={8}
-            paddingY={4}
-            backgroundColor="gray.700"
-            color="white"
-          >
-            Talent Upgrades
-          </Heading>
-          <Box>
-            {talent.upgrades.map((upgrade, index) => (
-              <TalentUpgrade key={index} upgrade={upgrade} />
-            ))}
-          </Box>
-        </>
-      )}
     </Box>
   )
 }
 
-export default SkillTalent
+export default PassiveTalent

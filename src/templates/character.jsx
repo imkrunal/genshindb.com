@@ -1,10 +1,16 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { CharacterFrame, Layout, SkillTalent } from '../components'
+import {
+  CharacterFrame,
+  Layout,
+  PassiveTalent,
+  SkillTalent,
+} from '../components'
 import { Box, Container, Flex, Heading } from '@chakra-ui/react'
 
 const Character = ({ data }) => {
   const { character } = data
+
   return (
     <Layout>
       <Container maxWidth="7xl">
@@ -27,6 +33,22 @@ const Character = ({ data }) => {
             </Heading>
             {character.skillTalents.map((talent, index) => (
               <SkillTalent
+                key={index}
+                talent={talent}
+                vision={character.vision}
+              />
+            ))}
+            <Heading
+              as="h2"
+              color="white"
+              fontSize={20}
+              marginBottom={4}
+              marginTop={{ base: 4, md: 0 }}
+            >
+              {character.name} Passive Talents
+            </Heading>
+            {character.passiveTalents.map((talent, index) => (
+              <PassiveTalent
                 key={index}
                 talent={talent}
                 vision={character.vision}
