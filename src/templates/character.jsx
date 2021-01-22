@@ -1,18 +1,70 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link as GatsbyLink } from 'gatsby'
 import {
   CharacterFrame,
   Layout,
   PassiveTalent,
   SkillTalent,
 } from '../components'
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Link, Text } from '@chakra-ui/react'
 
 const Character = ({ data }) => {
   const { character } = data
-
   return (
     <Layout>
+      <Box backgroundColor="gray.700">
+        <Container maxWidth="7xl">
+          {/* <Flex align="center">
+            <Box flex={{ base: 1, md: 0.3 }} paddingX={{ base: 0, md: 4 }}>
+              <Text fontSize={20} fontWeight="700" paddingY={4}>
+                {character.name}
+              </Text>
+            </Box>
+            <Flex
+              align="center"
+              flex={{ base: 1, md: 0.7 }}
+              paddingX={{ base: 0, md: 4 }}
+            >
+              <Link
+                to={`/characters/${character.slug}`}
+                as={GatsbyLink}
+                display="block"
+                paddingY={4}
+                paddingRight={8}
+                fontWeight="500"
+                _hover={{}}
+                _focus={{}}
+              >
+                Skill Talents
+              </Link>
+              <Link
+                to={`/characters/${character.slug}`}
+                as={GatsbyLink}
+                display="block"
+                paddingY={4}
+                paddingRight={8}
+                fontWeight="500"
+                _hover={{}}
+                _focus={{}}
+              >
+                Passive Talents
+              </Link>
+              <Link
+                to={`/characters/${character.slug}`}
+                as={GatsbyLink}
+                display="block"
+                paddingY={4}
+                paddingRight={8}
+                fontWeight="500"
+                _hover={{}}
+                _focus={{}}
+              >
+                Constellations
+              </Link>
+            </Flex>
+          </Flex> */}
+        </Container>
+      </Box>
       <Container maxWidth="7xl">
         <Flex
           direction={{ base: 'column', md: 'row' }}
@@ -46,6 +98,22 @@ const Character = ({ data }) => {
               marginTop={{ base: 4, md: 0 }}
             >
               {character.name} Passive Talents
+            </Heading>
+            {character.passiveTalents.map((talent, index) => (
+              <PassiveTalent
+                key={index}
+                talent={talent}
+                vision={character.vision}
+              />
+            ))}
+            <Heading
+              as="h2"
+              color="white"
+              fontSize={20}
+              marginBottom={4}
+              marginTop={{ base: 4, md: 0 }}
+            >
+              {character.name} Constellations
             </Heading>
             {character.passiveTalents.map((talent, index) => (
               <PassiveTalent
