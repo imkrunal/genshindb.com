@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { graphql, Link as GatsbyLink } from 'gatsby'
+import { graphql } from 'gatsby'
 import {
   CharacterFrame,
   Layout,
   PassiveTalent,
   SkillTalent,
 } from '../components'
-import { Box, Container, Flex, Heading, Link, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading } from '@chakra-ui/react'
 
 const Character = ({ data }) => {
   const { character } = data

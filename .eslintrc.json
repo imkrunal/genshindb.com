@@ -6,7 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "standard",
-    "plugin:prettier/reommended"
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,7 +17,8 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/prop-types": "off"
   },
   "settings": {
     "react": {
