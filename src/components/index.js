@@ -1,3 +1,3 @@
 export { default as Layout } from './Layout'
 export { default as Navigation } from './Navigation'
-export { CharacterCard } from './characters'
+export { CharacterCard, CharacterFrame, SkillTalent } from './characters'
