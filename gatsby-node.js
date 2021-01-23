@@ -3,7 +3,7 @@ const path = require('path')
 const characterPages = (data, createPage, characterTemplate) => {
   data.map(({ node }) => {
     const slug = `/characters/${node.slug}`
-    createPage({
+    return createPage({
       path: slug,
       component: characterTemplate,
       context: {

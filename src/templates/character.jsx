@@ -4,6 +4,7 @@ import {
   CharacterFrame,
   Layout,
   PassiveTalent,
+  SEO,
   SkillTalent,
 } from '../components'
 import { Box, Container, Flex, Heading } from '@chakra-ui/react'
@@ -11,7 +12,8 @@ import { Box, Container, Flex, Heading } from '@chakra-ui/react'
 const Character = ({ data }) => {
   const { character } = data
   return (
-    <Layout>
+    <Layout customSEO>
+      <SEO character characterNode={character} />
       <Box backgroundColor="gray.700">
         <Container maxWidth="7xl">
           {/* <Flex align="center">

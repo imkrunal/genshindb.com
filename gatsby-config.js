@@ -1,11 +1,22 @@
+const path = require('path')
+const config = require('./src/common/config')
+
 module.exports = {
+  siteMetadata: {
+    siteTitle: config.siteTitle,
+    siteDescription: config.siteDescription,
+    siteShortName: config.siteShortName,
+    siteUrl: config.siteUrl,
+    twitter: config.twitter,
+    facebook: config.facebook,
+  },
   plugins: [
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `characters`,
-        path: `${__dirname}/src/data/characters`,
+        path: path.join(process.cwd(), 'src', 'data', 'characters'),
       },
     },
     `gatsby-plugin-sharp`,
