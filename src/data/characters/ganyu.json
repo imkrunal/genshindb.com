@@ -1,5 +1,7 @@
 {
   "slug": "ganyu",
+  "icon": "../../images/characters/ganyu-icon.png",
+  "portrait": "../../images/characters/ganyu-portrait.png",
   "name": "Ganyu",
   "description": "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.",
   "vision": "Cryo",

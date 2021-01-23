@@ -1,5 +1,7 @@
 {
   "slug": "diona",
+  "icon": "../../images/characters/diona-icon.png",
+  "portrait": "../../images/characters/diona-portrait.png",
   "name": "Diona",
   "description": "A young lady who has inherited trace amounts of non-human blood. She is the incredible popular bartender of the Cat's Tail tavern.",
   "vision": "Cryo",

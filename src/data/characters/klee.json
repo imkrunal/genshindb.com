@@ -1,5 +1,7 @@
 {
   "slug": "klee",
+  "icon": "../../images/characters/klee-icon.png",
+  "portrait": "../../images/characters/klee-portrait.png",
   "name": "Klee",
   "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight.",
   "vision": "Pyro",

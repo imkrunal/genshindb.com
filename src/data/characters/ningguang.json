@@ -1,5 +1,7 @@
 {
   "slug": "ningguang",
+  "icon": "../../images/characters/ningguang-icon.png",
+  "portrait": "../../images/characters/ningguang-portrait.png",
   "name": "Ningguang",
   "description": "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.",
   "vision": "Geo",

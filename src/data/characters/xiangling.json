@@ -1,5 +1,7 @@
 {
   "slug": "xiangling",
+  "icon": "../../images/characters/xiangling-icon.png",
+  "portrait": "../../images/characters/xiangling-portrait.png",
   "name": "Xiangling",
   "description": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.",
   "vision": "Pyro",

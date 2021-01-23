@@ -1,5 +1,7 @@
 {
   "slug": "kaeya",
+  "icon": "../../images/characters/kaeya-icon.png",
+  "portrait": "../../images/characters/kaeya-portrait.png",
   "name": "Kaeya",
   "description": "A thinker in the Knights of Favonius with a somewhat exotic appearance.",
   "vision": "Cryo",

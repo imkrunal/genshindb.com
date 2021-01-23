@@ -1,5 +1,7 @@
 {
   "slug": "razor",
+  "icon": "../../images/characters/razor-icon.png",
+  "portrait": "../../images/characters/razor-portrait.png",
   "name": "Razor",
   "description": "A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning.",
   "vision": "Electro",

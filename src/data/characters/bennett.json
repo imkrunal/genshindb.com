@@ -1,5 +1,7 @@
 {
   "slug": "bennett",
+  "icon": "../../images/characters/bennett-icon.png",
+  "portrait": "../../images/characters/bennett-portrait.png",
   "name": "Bennett",
   "description": "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
   "vision": "Pyro",

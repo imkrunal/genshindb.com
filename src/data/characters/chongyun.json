@@ -1,5 +1,7 @@
 {
   "slug": "chongyun",
+  "icon": "../../images/characters/chongyun-icon.png",
+  "portrait": "../../images/characters/chongyun-portrait.png",
   "name": "Chongyun",
   "description": "A young exortcist from a family of exorcists. He does everything he can to suppress his pure positive energy.",
   "vision": "Cryo",

@@ -1,5 +1,7 @@
 {
   "slug": "xinyan",
+  "icon": "../../images/characters/xinyan-icon.png",
+  "portrait": "../../images/characters/xinyan-portrait.png",
   "name": "Xinyan",
   "description": "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing.",
   "vision": "Pyro",

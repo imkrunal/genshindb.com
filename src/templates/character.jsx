@@ -89,7 +89,7 @@ const Character = ({ data }) => {
               <SkillTalent
                 key={index}
                 talent={talent}
-                vision={character.vision}
+                vision={character.vision.name}
               />
             ))}
             <Heading
@@ -105,7 +105,7 @@ const Character = ({ data }) => {
               <PassiveTalent
                 key={index}
                 talent={talent}
-                vision={character.vision}
+                vision={character.vision.name}
               />
             ))}
             <Heading
@@ -121,7 +121,7 @@ const Character = ({ data }) => {
               <PassiveTalent
                 key={index}
                 talent={talent}
-                vision={character.vision}
+                vision={character.vision.name}
               />
             ))}
           </Box>
@@ -164,8 +164,32 @@ export const query = graphql`
       slug
       specialDish
       title
-      vision
+      vision {
+        name
+        slug
+        image {
+          childImageSharp {
+            fixed(width: 32, height: 32) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+          }
+        }
+      }
       weapon
+      icon {
+        childImageSharp {
+          fixed(width: 100, height: 100) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+      portrait {
+        childImageSharp {
+          fixed(width: 180, height: 250, fit: INSIDE) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
     }
   }
 `

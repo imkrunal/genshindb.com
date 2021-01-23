@@ -1,5 +1,7 @@
 {
   "slug": "sucrose",
+  "icon": "../../images/characters/sucrose-icon.png",
+  "portrait": "../../images/characters/sucrose-portrait.png",
   "name": "Sucrose",
   "description": "An alchemist filled with curiosity about all things. She researches bio-alchemy.",
   "vision": "Anemo",

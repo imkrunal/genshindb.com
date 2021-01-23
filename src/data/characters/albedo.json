@@ -1,5 +1,7 @@
 {
   "slug": "albedo",
+  "icon": "../../images/characters/albedo-icon.png",
+  "portrait": "../../images/characters/albedo-portrait.png",
   "name": "Albedo",
   "description": "An alchemist based in Mondstadt, in the service of the Knights of Favonius.",
   "vision": "Geo",

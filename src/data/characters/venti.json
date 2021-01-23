@@ -1,5 +1,7 @@
 {
   "slug": "venti",
+  "icon": "../../images/characters/venti-icon.png",
+  "portrait": "../../images/characters/venti-portrait.png",
   "name": "Venti",
   "description": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
   "vision": "Anemo",

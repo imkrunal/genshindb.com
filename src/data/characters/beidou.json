@@ -1,5 +1,7 @@
 {
   "slug": "beidou",
+  "icon": "../../images/characters/beidou-icon.png",
+  "portrait": "../../images/characters/beidou-portrait.png",
   "name": "Beidou",
   "description": "Beidou is the leader of the Crux — an armed fleet based in Liyue Harbor. An armed fleet means exactly what it sounds like: a fleet of ships armed to the teeth.",
   "vision": "Electro",

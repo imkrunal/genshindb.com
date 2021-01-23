@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
-import { Image as GatsbyImage } from 'gatsby-image'
-import { Flex, Image, Text, Link } from '@chakra-ui/react'
+import Image from 'gatsby-image'
+import { Flex, Text, Link, Image as GatsbyImage } from '@chakra-ui/react'
 
 const CharacterCard = ({ character }) => {
   return (
@@ -23,12 +23,37 @@ const CharacterCard = ({ character }) => {
         }}
         _focus={{}}
       >
-        <Image
-          as={GatsbyImage}
-          fallbackSrc="https://via.placeholder.com/100"
-          borderRadius={4}
-        />
-
+        {character.icon ? (
+          <Flex
+            align="center"
+            justify="center"
+            backgroundColor="gray.700"
+            borderRadius={4}
+            textAlign="center"
+            width={100}
+            height={100}
+            margin="auto"
+            position="relative"
+          >
+            <Image fixed={character.icon.childImageSharp.fixed} />
+            <Flex
+              borderRadius={5}
+              position="absolute"
+              top="-22px"
+              right="-22px"
+              align="center"
+              justify="center"
+              padding={2}
+            >
+              <Image fixed={character.vision.image.childImageSharp.fixed} />
+            </Flex>
+          </Flex>
+        ) : (
+          <GatsbyImage
+            fallbackSrc="https://via.placeholder.com/100"
+            borderRadius={4}
+          />
+        )}
         <Text marginTop={2}>{character.name}</Text>
       </Link>
     </Flex>

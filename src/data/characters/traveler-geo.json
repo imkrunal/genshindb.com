@@ -1,6 +1,8 @@
 {
   "slug": "traveler-geo",
-  "name": "Traveler",
+  "icon": "../../images/characters/traveler-geo-icon.png",
+  "portrait": "../../images/characters/traveler-geo-portrait.png",
+  "name": "Traveler Geo",
   "description": "The Sustainer is dying, the Creator has yet to return.\nBut the world won't burn again, because you will ascend to the seat of 「God」.",
   "vision": "Geo",
   "weapon": "Sword",

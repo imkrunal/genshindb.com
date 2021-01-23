@@ -1,5 +1,7 @@
 {
   "slug": "xiao",
+  "icon": "../../images/characters/xiao-icon.png",
+  "portrait": "../../images/characters/xiao-portrait.png",
   "name": "Xiao",
   "description": "A yaksha adeptus that defends Liyue. Also heralded as the \"Conqueror of Demons\" or \"Vigilant Yaksha.\"",
   "vision": "Anemo",

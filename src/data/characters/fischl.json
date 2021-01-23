@@ -1,5 +1,7 @@
 {
   "slug": "fischl",
+  "icon": "../../images/characters/fischl-icon.png",
+  "portrait": "../../images/characters/fischl-portrait.png",
   "name": "Fischl",
   "description": "A mysterious girl who calls herself \"Prinzessia der Verurteilung\" and travels with a night raven named Oz.",
   "vision": "Electro",

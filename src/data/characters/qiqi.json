@@ -1,5 +1,7 @@
 {
   "slug": "qiqi",
+  "icon": "../../images/characters/qiqi-icon.png",
+  "portrait": "../../images/characters/qiqi-portrait.png",
   "name": "Qiqi",
   "description": "An apprentice and herb-picker Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
   "vision": "Cryo",

@@ -7,11 +7,10 @@ module.exports = {
     siteDescription: config.siteDescription,
     siteShortName: config.siteShortName,
     siteUrl: config.siteUrl,
-    twitter: config.twitter,
-    facebook: config.facebook,
+    // twitter: config.twitter,
+    // facebook: config.facebook,
   },
   plugins: [
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,6 +18,21 @@ module.exports = {
         path: path.join(process.cwd(), 'src', 'data', 'characters'),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `elements`,
+        path: path.join(process.cwd(), 'src', 'data', 'elements'),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(process.cwd(), 'src', 'images'),
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

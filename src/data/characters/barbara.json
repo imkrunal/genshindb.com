@@ -1,5 +1,7 @@
 {
   "slug": "barbara",
+  "icon": "../../images/characters/barbara-icon.png",
+  "portrait": "../../images/characters/barbara-portrait.png",
   "name": "Barbara",
   "description": "Every denizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine.",
   "vision": "Hydro",

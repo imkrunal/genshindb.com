@@ -1,5 +1,7 @@
 {
   "slug": "mona",
+  "icon": "../../images/characters/mona-icon.png",
+  "portrait": "../../images/characters/mona-portrait.png",
   "name": "Mona",
   "description": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title.",
   "vision": "Hydro",

@@ -1,5 +1,7 @@
 {
   "slug": "diluc",
+  "icon": "../../images/characters/diluc-icon.png",
+  "portrait": "../../images/characters/diluc-portrait.png",
   "name": "Diluc",
   "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
   "vision": "Pyro",

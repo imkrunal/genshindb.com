@@ -25,6 +25,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      elements: allElementsJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
   if (errors) {
@@ -35,4 +42,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const characterTemplate = path.resolve('./src/templates/character.jsx')
 
   characterPages(characters.edges, createPage, characterTemplate)
+}
+
+exports.createSchemaCustomization = async ({ actions: { createTypes } }) => {
+  const typeDefs = `
+    type CharactersJson implements Node {
+      vision: ElementsJson @link(by: "name")
+    }
+  `
+  createTypes(typeDefs)
 }

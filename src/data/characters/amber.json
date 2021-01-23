@@ -1,5 +1,7 @@
 {
   "slug": "amber",
+  "icon": "../../images/characters/amber-icon.png",
+  "portrait": "../../images/characters/amber-portrait.png",
   "name": "Amber",
   "title": "Champion Glider",
   "vision": "Pyro",

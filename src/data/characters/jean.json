@@ -1,5 +1,7 @@
 {
   "slug": "jean",
+  "icon": "../../images/characters/jean-icon.png",
+  "portrait": "../../images/characters/jean-portrait.png",
   "name": "Jean",
   "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of the Knights of Favonius in Mondstadt.",
   "vision": "Anemo",

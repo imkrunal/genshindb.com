@@ -1,5 +1,7 @@
 {
   "slug": "zhongli",
+  "icon": "../../images/characters/zhongli-icon.png",
+  "portrait": "../../images/characters/zhongli-portrait.png",
   "name": "Zhongli",
   "description": "A mysterious guest invited by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
   "vision": "Geo",

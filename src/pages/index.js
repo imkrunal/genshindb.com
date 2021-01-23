@@ -28,6 +28,24 @@ export const pageQuery = graphql`
           id
           name
           slug
+          icon {
+            childImageSharp {
+              fixed(width: 100, height: 100) {
+                ...GatsbyImageSharpFixed_withWebp
+              }
+            }
+          }
+          vision {
+            name
+            slug
+            image {
+              childImageSharp {
+                fixed(width: 32, height: 32) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+          }
         }
       }
     }
