@@ -6,8 +6,8 @@ import { getElementColor } from '../../utils/helper'
 const PassiveTalent = ({ talent, vision }) => {
   return (
     <Box
-      backgroundColor="gray.900"
-      boxShadow="md"
+      backgroundColor="cardBodyBg"
+      boxShadow="0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)"
       marginBottom={4}
       borderRadius={4}
     >

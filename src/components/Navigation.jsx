@@ -7,13 +7,13 @@ const NavItem = ({ to, children, ...props }) => (
     as={GatsbyLink}
     to={to}
     display="block"
-    color="gray.400"
+    color="white"
     paddingX={4}
     _hover={{
-      color: 'brand.400',
+      color: 'white',
     }}
     _focus={{
-      color: 'brand.400',
+      color: 'white',
     }}
     {...props}
   >
@@ -23,7 +23,7 @@ const NavItem = ({ to, children, ...props }) => (
 
 const Navigation = () => {
   return (
-    <Box background="gray.900" boxShadow="sm">
+    <Box background="navBg" boxShadow="sm">
       <Container maxWidth="7xl">
         <Flex align="center" justify="space-between">
           <Link
@@ -32,7 +32,7 @@ const Navigation = () => {
             display="block"
             fontSize={20}
             fontWeight="700"
-            color="brand.400"
+            color="white"
             paddingY={4}
             _hover={{}}
             _focus={{}}

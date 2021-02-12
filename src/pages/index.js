@@ -1,18 +1,28 @@
 import React from 'react'
-import { Container, Flex } from '@chakra-ui/react'
+import { Container, Grid } from '@chakra-ui/react'
 import { graphql } from 'gatsby'
-import { CharacterCard, Layout } from '../components'
+import { Breadcrumb, CharacterCard, Layout } from '../components'
 
 const Home = ({ data }) => {
   const { characters } = data
   return (
     <Layout>
-      <Container maxWidth="7xl">
-        <Flex flexWrap="wrap">
+      <Breadcrumb crumbs={[{ title: 'GenshinDB', link: '/' }]} />
+      <Container maxWidth="7xl" paddingY={8}>
+        <Grid
+          gap={4}
+          templateColumns={{
+            base: 'repeat(1, 1fr)',
+            sm: 'repeat(2, 1fr)',
+            md: 'repeat(3, 1fr)',
+            lg: 'repeat(4, 1fr)',
+            xl: 'repeat(6, 1fr)',
+          }}
+        >
           {characters.edges.map(({ node }) => (
             <CharacterCard key={node.slug} character={node} />
           ))}
-        </Flex>
+        </Grid>
       </Container>
     </Layout>
   )
@@ -30,7 +40,7 @@ export const pageQuery = graphql`
           slug
           icon {
             childImageSharp {
-              fixed(width: 100, height: 100) {
+              fixed(width: 70, height: 70) {
                 ...GatsbyImageSharpFixed_withWebp
               }
             }

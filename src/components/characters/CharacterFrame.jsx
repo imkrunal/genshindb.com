@@ -1,18 +1,10 @@
 import React from 'react'
 import Image from 'gatsby-image'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
-import { getElementColor } from '../../utils/helper'
+import { Box, Flex } from '@chakra-ui/react'
 
 const CharacterFrame = ({ character }) => {
   return (
-    <Flex
-      direction="column"
-      align="center"
-      backgroundColor="gray.900"
-      borderRadius={4}
-      boxShadow="md"
-      padding={8}
-    >
+    <Flex direction="column" align="center" borderRadius={4}>
       {character.portrait && (
         <Box position="relative">
           <Box borderRadius={4} marginBottom={4}>
@@ -31,17 +23,6 @@ const CharacterFrame = ({ character }) => {
           </Flex>
         </Box>
       )}
-      <Heading as="h1" fontSize={24} color="white">
-        {character.name} Build Guide
-      </Heading>
-      <Flex marginBottom={2} align="center">
-        <Text color={getElementColor(character.vision.name)} marginRight={2}>
-          {character.vision.name}
-        </Text>
-        &middot;
-        <Text marginLeft={2}>{character.weapon}</Text>
-      </Flex>
-      <Text textAlign="center">{character.description}</Text>
     </Flex>
   )
 }
