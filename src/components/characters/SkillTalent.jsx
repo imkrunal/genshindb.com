@@ -5,7 +5,13 @@ import { getElementColor } from '../../utils/helper'
 
 const TalentUpgrade = ({ upgrade }) => {
   return (
-    <Flex paddingY={4} paddingX={8} backgroundColor="gray.900" borderRadius={4}>
+    <Flex
+      paddingY={4}
+      paddingX={8}
+      _odd={{ backgroundColor: 'cardBodyBg' }}
+      _even={{ backgroundColor: 'cardHeaderBg' }}
+      _last={{ borderBottomRadius: 4 }}
+    >
       <Box width={0.5}>{upgrade.name}</Box>
       <Box width={0.5}>{upgrade.value}</Box>
     </Flex>
@@ -15,8 +21,8 @@ const TalentUpgrade = ({ upgrade }) => {
 const SkillTalent = ({ talent, vision }) => {
   return (
     <Box
-      backgroundColor="gray.900"
-      boxShadow="md"
+      backgroundColor="cardBodyBg"
+      boxShadow="0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)"
       marginBottom={4}
       borderRadius={4}
     >
@@ -55,25 +61,10 @@ const SkillTalent = ({ talent, vision }) => {
           {/* ))} */}
         </Box>
       </Flex>
-      {talent.upgrades && (
-        <>
-          <Heading
-            as="h4"
-            fontSize={18}
-            paddingX={8}
-            paddingY={4}
-            backgroundColor="gray.700"
-            color="white"
-          >
-            Talent Upgrades
-          </Heading>
-          <Box>
-            {talent.upgrades.map((upgrade, index) => (
-              <TalentUpgrade key={index} upgrade={upgrade} />
-            ))}
-          </Box>
-        </>
-      )}
+      {talent.upgrades &&
+        talent.upgrades.map((upgrade, index) => (
+          <TalentUpgrade key={index} upgrade={upgrade} />
+        ))}
     </Box>
   )
 }
