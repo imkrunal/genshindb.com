@@ -6,6 +6,11 @@ const theme = extendTheme({
     body: 'Inter, sans-serif',
   },
   colors: {
+    navBg: '#1D8DDE',
+    breadcrumbsBg: '#212835',
+    bodyBg: '#161B20',
+    cardBodyBg: '#212835',
+    cardHeaderBg: '#26303F',
     brand: {
       50: '#F7FEE7',
       100: '#ECFCCB',
@@ -22,7 +27,7 @@ const theme = extendTheme({
   styles: {
     global: {
       'body,html': {
-        backgroundColor: 'gray.800',
+        backgroundColor: 'bodyBg',
         color: 'gray.400',
       },
     },
